@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio  Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/167d741242.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+<div class="container">
+    <nav>
+        <img src="ui-design.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+      <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            
+    </nav>
+    <div class="header-text">
+        <p class="hell">Web Developer /Data Science</p>
+        <h1> Hi,I'm <span>Chirag</span>  Diwan</h1>
+    </div>
+</div>
+<!-- about -->
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="me1.png">
+                </div>
+                
+                <div class="col2">
+                    <h1 class="aboutme">About Me</h1> 
+                    <p class="loremm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem error natus aliquid recusandae ipsam itaque cupiditate modi corporis ipsum, dolore repellendus deleniti, et repellat. Possimus eius nobis ut assumenda dignissimos aspernatur rem culpa molestiae ipsa. Assumenda eum id nisi est?</p>
+                <div class="titles">
+                    <p class="linkss activeskill" onclick="openmenutab('skills')">Skills and Certification</p>
+                    <p class="linkss" onclick="opentab('project')">Projects</p>
+                    <p class="linkss"onclick="opentab('edu')">Educations</p>
+                </div>
+                <div class="contents activet" id="skills">
+                    <ul>
+                        <li>C++</li>
+                        <li>Web Development</li>
+                        <li>Python</li>
+                        <li>Data Science and ML</li>
+                        <li>Power Bi</li>
+                        <li>Udemy course certification in ML and Deep Learning</li>
+                        <li>Udemy course certification in Web Development</li>
+                    </ul>
+                </div>
+                <div class="contents" id="project">
+                    <ul>
+                        <li>Code-Editor</li>
+                        <li>Demo sublimAir-plane Booking Site</li>
+                        <li>Live Weather App</li>
+                        <li>Churn Analysis Project</li>
+                        <li>Startup Fund Analysis Project</li>
+                    </ul>
+                </div>
+                <div class="contents" id="edu">
+                    <ul>
+                        <li><span>Schooling</span><br>St. Luke's Solan, H.P</li>
+                        <li><span>College-(current)</span><br>JUIT ,Solan</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service -->
+   <div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services </h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-brands fa-webflow"></i>                
+                <h2>Web Design</h2>
+<p>Passionate web developer with expertise in creating dynamic and user-friendly web applications, blending creativity with technical proficiency</p>           </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Analysis</h2>
+                <p>
+                    Dedicated data scientist leveraging analytical skills to extract insights and solve complex problems through advanced statistical modeling and machine learning algorithms </p>
+            </div>
+            
+        </div>
+    </div>
+
+   </div>
+   <!-- portfolio -->
+   <div id="portfolio">
+<div class="container">
+    <h1 class="subtitle">My Work</h1>
+    <div class="worklist">
+        <div class="work">
+            <img class="avv" src="av.jpg" >
+            <div class="layer">
+                <h3>Airline Booking Site</h3>
+                <p>Airline webiste to book your flight</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>     
+       <div class="work">
+        <img class="ce" src="ce.png" >
+        <div class="layer">
+            <h3>Code Editor</h3>
+            <p>A code Editor of self version</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+        </div>
+        <div class="work">
+            <img  class="wa" src="wa.png" >
+            <div class="layer">
+                <h3>Weather App</h3>
+                <p>A real time weather site</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="https://github.com/Chirag-55/Projects"class="btn" >See more</a>
+</div>
+   </div>
+   <!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contactl">
+<h1 class="subtitle" >Contact Me</h1>
+<p><i class="fa-solid fa-envelope"></i>chiragdiwan1230@gmail.com</p>
+<div class="socialmedia">
+    <a href="www.linkedin.com/in/chirag-diwan1    "><i class="fa-brands fa-linkedin"></i> </a>
+    <a href="https://www.instagram.com/chirag_diwan31/"><i class="fa-brands fa-instagram"></i></a>
+</div>
+          <a href="Resume.pdf" download class="btn btn2">Download CV</a>
+</div>
+            <div class="contactr">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="Name" placeholder="Your Name" required >
+                    <input type="email" name="Email" placeholder="Your Email" required >
+                    <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn3 ">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("linkss");
+        var tabcontents = document.getElementsByClassName("contents");
+       function  opentab(tabname){
+        for(tablink of tablinks){
+           tablink.classList.remove("activeskill");
+        }
+        for(tabcontent of tabcontents){
+           tabcontent.classList.remove("activet");
+        }
+        event.currentTarget.classList.add("activeskill");
+        document.getElementById(tabname).classList.add("activet");
+       }
+    
+    </script>
+    <script>
+    var sidemennu = document.getElementById("sidemenu");
+   function openmenu(){
+    sidemennu.style.right="0";
+   }
+   function closemenu(){
+    sidemennu.style.right="-200px";
+   }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby3U3F8aBZO5Ks58d4u-rNcJ6Do8jz-3B93pcBJBJNJ2N3BC2JnAcgaoNvJ2hMoWjkxTw/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "Message Sent !!"
+                                setTimeout(function(){
+                                    msg.innerHTML = ""   
+                                },2000)
+                                form.reset()
+                   })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

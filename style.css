@@ -1,0 +1,372 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: black;
+    color:whitesmoke;
+}
+#header{
+    width: 100%;
+    height: 100%;
+    /* background-image: url('me1.png'); */
+    background-size:cover ;
+    background-position:center ;
+}
+.container{
+    padding:  10% 10%;
+}
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+ display: inline-block;
+ list-style: none;
+ margin:  10px 20px;   
+}
+
+nav ul li a{
+color: white;
+text-decoration: none;
+font-size: 18px;
+position: relative;
+}
+nav ul li a::before{
+    content: '';
+    width :0;
+    height:3px;
+    background: #ff004f;
+    position: absolute;
+    bottom:-6px;
+    transition: 0.4s ;
+}
+
+nav ul li a:hover::before{
+    width:100%;
+
+};
+.header-text{
+    margin-top: 30%;
+    font-size: 25PX;
+}
+.header-text h1{
+font-size: 60px;
+}
+.header-text h1 span{
+    color:#ff004f
+}
+#about{
+    padding: 80px 0;
+}
+.row{
+ display: flex;  
+ flex-wrap: wrap;
+ justify-content: space-between; 
+}
+.col1{
+    flex-basis:35%;
+}
+.col1 img{
+    width:90%;
+    border-radius: 10%;
+}
+.col2{
+    flex-basis: 60% ;
+}
+.aboutme{
+  font-size: 50px;  
+}
+.loremm{
+    margin-top: 10%;
+    font-size: 17px;
+}
+.titles{
+    display: flex;
+    margin:20px 0 40px;
+}
+.linkss{
+    margin-right: 40px; 
+    font-size: 17px;
+position: relative;
+cursor: pointer;
+    
+}
+.linkss::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    bottom: -6px;
+    left:0;
+    position: absolute;
+    transition: 0.4s;
+}
+.linkss:hover::after{
+    width: 100%;
+}
+.contents ul li{
+    margin:12px;
+    color:ghostwhite;
+}
+.contents ul li span{
+    color:#ff004f;
+    margin: 0 0 30px;;
+}
+.contents{
+    display: none;
+}
+.contents.activet{
+    display: block;
+}
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+#services{
+    padding: 30px 0;
+}
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.service-list div{
+    background: rgb(74, 71, 71);
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 15px;
+     transition: background 0.5 s;
+}
+.service-list div i{
+font-size: 35px;
+padding-bottom: 30px;
+}
+.service-list div h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.service-list div:hover{
+    background:#ff004f;
+    transform: translateY(-10px);
+}
+#portfolio{
+    padding: 50px 0;
+}
+.worklist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10px, 1fr));
+    grid-gap: 40px;
+}
+.work{
+    border-radius: 15px;
+    position: relative;
+    display: block;
+}
+.avv{
+ height: 280px;   width: 200x;
+}
+.ce{
+    height: 300px;   width: 430px;
+   }
+   .wa{
+    height: 300px;   width: 400px;
+   }
+   .layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,4,0.2),#ff004f);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+   }
+   .layer h3{
+    margin-bottom: 20px;
+   }
+   .layer a{
+    color: #ff004f;
+    margin-top: 20px;
+    font-size: 18px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+   }
+  .work:hover .layer{
+    height:100%;
+  }
+  .btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color:white;
+    text-decoration: none;
+    transition: background 0.7s;
+  }
+  .btn:hover{
+    background: #ff004f;
+  }
+  .contactl{
+    flex-basis: 35%;
+  }
+  .contactr{
+    flex-basis: 60%;
+  }
+  .contactl p{
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .contactl p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size:25px ;
+  }
+  .socialmedia{
+    margin-top: 30px;
+  }
+  .socialmedia a{
+    text-decoration: none;
+font-size: 30px;
+margin-left: 15px;
+display: inline-block;  
+}
+.socialmedia a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn .btn2{
+ display: inline-block;
+
+}
+   .btn3{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color:white;
+    background: #ff004f;
+    text-decoration: none;
+    transition: background 0.7s;
+  }
+  .contactr form{
+    width: 100%;
+  }
+  form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:rgb(74, 71, 71);
+    padding: 15px;
+    margin:15px 0;
+    font-weight:bold;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+  }
+  form btn2{
+    padding:14px 60px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  nav .fa-solid{
+    display: none;  
+  }
+
+  @media  only screen and (max-width:600px){
+
+.header-text{
+    margin-top: 100%;
+    font-size: 16px;
+}
+.header-text h1{
+    font-size: 30px;
+}
+nav .fa-solid{
+    display: block;
+  }
+nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: 0.6s;
+}
+nav ul li{
+    display: block;
+    margin:25px;
+}
+nav ul .fa-solid{
+   position: absolute;
+   top: 25px;
+   left: 20px;
+   cursor: pointer; 
+}
+.menu{
+align-items:end;
+}
+.subtitle{
+    font-size: 40px;
+}
+.col1,.col2{
+flex-basis: 100%;
+}
+
+.linkss, .col2{
+    font-size: 16px;
+}
+.contactl,.contactr{
+    flex-basis: 100%;
+}
+.work{
+    flex-basis: 50%;
+}
+}
+#smsg{
+    color:#ff004f;
+    margin-top: -40px;
+    display: block;
+}
+.hell{
+margin-top: 30px;
+}
+.worklist{
+    margin-top: 30px;
+}
